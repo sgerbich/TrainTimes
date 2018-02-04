@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Train Times</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>Employee Data Management</h1>
+        <p> Manage employee records and pay</p>
+    </div>
+    <div id="current" class="panel panel-primary">
+        <div class="panel-heading">Current Employees</div>
+        <div class="panel-body">
+            <table id="target" class="table">
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>First Train Time</th>
+                    <th>Frequency</th>
+                </tr>
+               
+                
+            </table>
+            
+        </div>
+    </div>
+    <br>
+    <div id="add" class="panel panel-primary">
+            <div class="panel-heading">Generic heading</div>
+        <div class="panel-body">
+            <div id="trainName">
+                <label for="trainName">Train name</label>
+                <br>
+                <input type="text" id="train-submit">
+                <br>
+            </div>
+            <div id="destination">
+                <label for="Destination">Destination</label>
+                <br>
+                <input type="text" id="dest-submit">
+                <br>
+            </div>
+            <div id="trainTime">
+                <label for="trainTime">First Train Time</label>
+                <br>
+                <input type="text" id="firstT-submit">
+                <br>
+            </div>
+            <div id="frequency">
+                <label for="Frequency">Frequency</label>
+                <br>
+                <input type="text" id="freq-submit">
+                <br>
+            </div>
+        </div>
+        <button id="submitButton">Submit</button>
+    </div>
+</body>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</html>
