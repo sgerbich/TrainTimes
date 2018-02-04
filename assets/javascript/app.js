@@ -14,10 +14,9 @@ var dest;
 var firstT;
 var freq;
 $(document).ready(function () {
-
-    $(document).on("click", "#submitButton", function () {
-        database.ref().on("value", function (snapshot) {
-            var remoteData = snapshot.val();
+    
+    $(document).on("click", "#submitButton", function (event) {
+        
             event.preventDefault();
             tName = $("#train-submit").val().trim();
             dest = $("#dest-submit").val().trim();
@@ -31,8 +30,7 @@ $(document).ready(function () {
             });
 
 
-        })
-
+        
 
     })
 });
